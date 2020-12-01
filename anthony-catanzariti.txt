@@ -1,0 +1,157 @@
+Link to completed CodePen: https://codepen.io/apcatanzariti/pen/ExgVYmx?editors=1100
+
+1. What is Semantic HTML?
+Semantic HTML is HTML that gives some indication as to what is contained within. <header> is semantic HTML, while <div> is not.
+
+2. What is HTML used for?
+It is a markup language that is essentially the skeleton of a webpage. It's the "scaffolding" that gives a webpage its basic structure.
+
+3. What is an attribute and where do we put it? 
+Attributes provide additional information about elements. For example, the <a> tag defines a hyperlink and the "href" attribute specifies the URL of the page. Same goes for the <img> tag and the "src" attribute.
+
+4. What is the h1 tag used for? How many times should I use it on a page?
+The <h1> tag is used for specifying the most important heading on the page. It boasts the largest font size by default and it's best practice to use it only once per page, but can be used more than once if necessary.
+
+5. Name two tags that have required attributes
+<a> and <img>
+
+6. What do we put in the head of our HTML document?
+The <head> element generally contains HTML metadata. These commonly include document title, character set, styles, scripts, etc.
+
+7. What is an id? 
+It is a unique identifier for an element.
+
+8. What elements can I add an id to? 
+As far as I know, all elements can have an id added to them. Ex: p id = "example" , div id = "example"
+
+9. How many times can I use the same id on a page?
+Only one time per page.
+
+10. What is a class?
+A class is a unique identifier for an HTML element.
+
+11. What elements can I add a class to? 
+Just like ids, all elements can have a class.
+
+12. How many times can I use the same class on a page? 
+Classes can be used as many times as needed on a given page.
+
+13. How do I get my link to open in a new tab?
+<a href = "http://www.google.com" target = "_blank">Take me to Google in a new tab!</a>
+
+14. What is the alt attribute in the image tag used for?
+It provides information about the image should it be unable to be viewed. Screen reader, bad connection, etc.
+
+15. How do I reference an id?
+#
+
+16. What is the difference between a section and a div
+A section is semantic and a div is not.
+
+17. What is CSS used for? 
+It is used for providing style to HTML code.
+
+18. How to we select an element? Example - every h2 on the page
+h2 {
+
+}
+
+19. What is the difference between a class and an id? - Give me an example of when I might use each one
+Id can be used once, classes can be used more than once. Id may be used for an image gallery (generally only one per page), while a class my be used on text that you want to style the same way all throughout your webpage.
+
+20. How do we select classes in CSS?
+.
+
+21. How do we select a p element with a single class of “human”?
+.human p {
+
+}
+
+22. What is a parent child selector? When would this be useful? 
+It selects all of the elements within a given element. ex: div > p {}. This would select every <p> element where the parent is a <div> element. Useful when you have many of the same element (<p>) with the same parent element (<div>)
+
+23. How do you select all links within a div with the class of sidebar?
+.sidebar a {
+
+}
+
+24. What is a pseudo selector?
+Used to define a special state of an element such as a hover or visited/unvisited links.
+
+25. What do we use the change the spacing between lines?
+line-height: 2;
+
+26. What do we use to change the spacing between letters?
+letter-spacing: 2px;
+
+27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+text-transform: capitalize;
+text-transform: lowercase;
+text-transform: uppercase;
+
+28. How do I add a 1px border around my div that is dotted and black?
+border: 1px dotted black;
+
+29. How do I select everything on the page? 
+* {
+
+}
+
+30. How do I write a comment in CSS?
+/* your comment here */
+
+31. How do I find out what file I am in, when I am using the command line? 
+pwd
+
+32. Using the command line - how do I see a list of files/folders in my current folder?
+ls
+
+33. How do I remove a file via the command line? Why do I have to be careful with this?
+rm fileName - need to be careful because it does not require or prompt for confirmation and the file is permanently deleted.
+
+34. Why should I use version control?
+It allows you (and others) to go back to previous versions of your work. Helpful for debugging, etc.
+
+35. How often should I commit to github?
+As often as you need to based on workflow.
+
+36. What is the command we would use to push our repo up to github? 
+git push -u origin branch-name
+
+37. Walk me through Lambda's git flow.
+fork, clone, branch, (do assignment) add, commit, push
+
+Stretch Questions
+
+1. What is the difference between an inline element and a block element?
+Block elements take up their own line (<div>) and inline elements (<span>) do not.
+
+2. What happens when an element is positioned absolutely?
+It will follow the position you indicated regardless of screen size, orientation, etc.
+
+3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
+by using flex-basis?
+ 
+4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+Display block: <div>, <section>, <p>
+Display inline: <span>, <a>
+Display inline block: <button>, <img>
+
+5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given
+ them?
+The box model is the model that governs the space that elements occupy. There is padding, border, and margin and each is set to 0 by default, but can be manipulated through CSS. The "fix" seems to be
+flex box but I do not have much experience with it. I have used floats and clears in the past when designing web pages but it seems like flex box may be a more elegant solution and works well if the
+device the user is viewing the webpage on is flipped to a different orientation (landscape vs. portrait).
+
+
+
+
+
+
+
+
+
+
+
+
+
